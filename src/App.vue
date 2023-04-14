@@ -1,26 +1,37 @@
 <template>
+  <NavBar/>
   <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <CounterApp/>
+  <NameDetails/>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CounterApp from './components/CounterApp.vue'
+import NavBar from "./components/NavBar.vue"
+import NameDetails from './components/NameDetails.vue';
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CounterApp,
+    NavBar,
+    NameDetails
   }
 }
 </script>
 
 <style>
+*{
+  margin: 0;
+  padding: 0;
+}
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  
+  
 }
 </style>
