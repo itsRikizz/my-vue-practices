@@ -1,14 +1,12 @@
 <template >
     <div>
-        <!-- <h2>Name: {{ name  }}</h2> -->
-        <!-- <h2>Data: {{ getData()  }}</h2> -->
         <h2>Name: {{ getData().name }}</h2>
         <h2>Data: {{ getData().age }}</h2>
         <button @click="ageChange()">change age</button>
         <button v-on:click="test()">Click Me</button>
         <div>
             <input type="text" v-model="datas">
-            <h3>{{ datas }}</h3>
+            <h3>{{ datas.length}}</h3>
         </div>
 
     </div>
@@ -19,7 +17,7 @@ export default {
         return {
             name: "sanmay",
             age: 25,
-            datas: 0
+            datas: "sanmay"
         }
     },
     methods: {

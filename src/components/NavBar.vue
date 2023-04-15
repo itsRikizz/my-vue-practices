@@ -32,7 +32,7 @@ nav li {
 }
 
 nav li a {
-    display: block;
+    display:block;
     color: white;
     text-align: center;
     padding: 14px 16px;
@@ -40,6 +40,7 @@ nav li a {
 }
 
 nav li a:hover {
-    background-color: #111;
+    background-color: #2d1f6e;
+    color: aliceblue;
 }
 </style>
